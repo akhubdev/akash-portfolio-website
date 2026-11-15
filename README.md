@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Akash Das — Data Analyst Portfolio
+
+A personal portfolio website showcasing my journey, technical skills, analytics projects, and interest in Retail, E-commerce, and Supply Chain Analytics.
+
+## About
+
+I am a Computer Science and Engineering graduate interested in transforming data into meaningful business insights.
+
+My technical interests include Advanced Excel, Power BI, SQL, Python, and Generative AI.
+
+## Website Features
+
+- Professional, responsive portfolio design
+- About, Experience, Skills, Education, and Contact sections
+- Dedicated project pages
+- Project presentations and GitHub links
+- Resume download
+- AI-powered portfolio assistant — Akash AI
+- Interactive chat interface
+- Responsive desktop and mobile layouts
+
+## Technology Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Gemini API
+- Git and GitHub
+- Vercel
+
+## Featured Projects
+
+### Excel Analytics
+- India CPI Inflation Analysis
+- Gurgaon Traffic Violation Analysis
+
+### Power BI Analytics
+- Netflix Content Analytics Dashboard
+- Brazilian E-commerce Analytics — Olist
+- Blinkit Sales and Business Performance Dashboard
+
+### Python & Development
+- HealthGuard AI
+- Civic AI
+
+## AI Portfolio Assistant
+
+Akash AI is an AI-powered portfolio assistant designed to help visitors explore my skills, projects, education, and professional background.
+
+It uses the Gemini API to generate conversational responses based on portfolio information.
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/akhubdev/akash-portfolio-website.git
+```
+
+Navigate to the project:
+
+```bash
+cd akash-portfolio-website
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file in the project root and add:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Description |
+|---|---|
+| GEMINI_API_KEY | API key used by the AI portfolio assistant |
 
-## Learn More
+Never commit API keys or `.env.local` to GitHub.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website is intended to be deployed using Vercel with GitHub integration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+**Akash Das**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- GitHub: https://github.com/akhubdev
+- LinkedIn: https://www.linkedin.com/in/akashdastech/
+- Email: cchiku123@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with Next.js and a passion for Data Analytics.
