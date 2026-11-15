@@ -1,4 +1,4 @@
-# Akash Das — Data Analyst Portfolio
+# Akash Das — Data Analyst Portfolio (Website)
 
 <p align="center">
   <a href="https://akash-portfolio-website-ten.vercel.app/">
