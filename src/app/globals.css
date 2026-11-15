@@ -1,0 +1,258 @@
+
+@import "tailwindcss";
+
+/* ========================================
+   AKASH DAS — PORTFOLIO DESIGN SYSTEM
+   ======================================== */
+
+:root {
+  /* Brand Colors */
+  --background: #F8F7F4;
+  --surface: #FFFFFF;
+  --foreground: #292929;
+  --muted: #777777;
+
+  /* Accent Colors */
+  --accent: #E98272;
+  --accent-light: #FCEAE6;
+
+  /* Supporting Colors */
+  --soft-green: #DDEDE5;
+  --soft-blue: #DDE9FA;
+  --soft-yellow: #F8EFCF;
+
+  /* Borders */
+  --border: #EAE8E3;
+
+  /* Layout */
+  --container-width: 1200px;
+  --section-spacing: 100px;
+
+  /* Radius */
+  --radius-card: 20px;
+  --radius-button: 999px;
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-mono: monospace;
+}
+
+
+/* ========================================
+   GLOBAL RESET
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+  color: var(--foreground);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+p {
+  color: var(--muted);
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+.handwritten-text {
+  font-family: var(--font-accent), cursive;
+}
+
+/* ========================================
+   LINKS & BUTTONS
+   ======================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ========================================
+   LAYOUT UTILITIES
+   ======================================== */
+
+.container-custom {
+  width: min(100% - 48px, var(--container-width));
+  margin-inline: auto;
+}
+
+.section-spacing {
+  padding-block: var(--section-spacing);
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+  background: var(--accent-light);
+  color: var(--foreground);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D3CD;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 64px;
+  }
+
+  .container-custom {
+    width: min(100% - 32px, var(--container-width));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   RESPONSIVE DESIGN IMPROVEMENTS
+   ======================================== */
+
+/* Prevent unwanted horizontal scrolling */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* Responsive media */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better section spacing on tablets */
+@media (max-width: 1024px) {
+  :root {
+    --section-spacing: 80px;
+  }
+
+  .container-custom {
+    width: min(100% - 40px, var(--container-width));
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 64px;
+  }
+
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  .container-custom {
+    width: min(100% - 32px, var(--container-width));
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  :root {
+    --section-spacing: 48px;
+  }
+
+  .container-custom {
+    width: min(100% - 28px, var(--container-width));
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
